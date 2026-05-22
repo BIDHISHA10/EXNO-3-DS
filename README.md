@@ -47,17 +47,21 @@ bidhisha=OrdinalEncoder(categories=[pm])
 bidhisha.fit_transform(df[["ord_2"]])
 ```
 <img width="185" height="240" alt="image" src="https://github.com/user-attachments/assets/237288a5-adb2-4c42-bef2-b5604c21a018" />
+
 ```
- df['bo2']=bidhisha.fit_transform(df[["ord_2"]])
- print(df)
+df['bo2']=bidhisha.fit_transform(df[["ord_2"]])
+print(df)
 ```
+
 <img width="437" height="266" alt="image" src="https://github.com/user-attachments/assets/5266fd74-fd9a-4e52-be18-267bd0612a25" />
+
 ```
 le=LabelEncoder()
 dfc=df.copy()
 dfc['ord_2']=le.fit_transform(dfc['ord_2'])
 dfc
 ```
+
 <img width="422" height="467" alt="image" src="https://github.com/user-attachments/assets/19091893-0617-4695-9dad-80d35c38b492" />
 
 ```
@@ -69,12 +73,16 @@ df2 = pd.concat([df2, enc], axis=1)
 df2
 ```
 <img width="543" height="461" alt="image" src="https://github.com/user-attachments/assets/393654a9-6691-4b44-a2ac-811cc2c276e9" />
+
 ```
  pd.get_dummies(df2,columns=["nom_0"])
 ```
+
 <img width="833" height="470" alt="image" src="https://github.com/user-attachments/assets/52eb0766-67e9-4ff3-b19f-281a230526b8" />
+
 ```
 pip install category_encoders
+
 ```
 <img width="983" height="461" alt="image" src="https://github.com/user-attachments/assets/9ba6c6e1-92cd-4681-a415-06cc39ee07bc" />
 
@@ -91,6 +99,7 @@ nd=be.fit_transform(df['Ord_2'])
 df
 ```
 <img width="605" height="485" alt="image" src="https://github.com/user-attachments/assets/5601f4a3-a7d9-4c0e-9b5a-6a9a3c35fd49" />
+
 ```
 dfb=pd.concat([df,nd],axis=1)
 dfb
