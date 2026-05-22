@@ -59,6 +59,7 @@ dfc['ord_2']=le.fit_transform(dfc['ord_2'])
 dfc
 ```
 <img width="422" height="467" alt="image" src="https://github.com/user-attachments/assets/19091893-0617-4695-9dad-80d35c38b492" />
+
 ```
 from sklearn.preprocessing import OneHotEncoder
 ohe = OneHotEncoder(sparse_output=False)
@@ -76,6 +77,7 @@ df2
 pip install category_encoders
 ```
 <img width="983" height="461" alt="image" src="https://github.com/user-attachments/assets/9ba6c6e1-92cd-4681-a415-06cc39ee07bc" />
+
 ```
 from category_encoders import BinaryEncoder
 df=pd.read_csv("data.csv")
@@ -93,7 +95,10 @@ df
 dfb=pd.concat([df,nd],axis=1)
 dfb
 ```
+
 <img width="872" height="478" alt="image" src="https://github.com/user-attachments/assets/b20e2bd3-9b53-4367-8152-60440e1ae93a" />
+
+
 ```
 from category_encoders import TargetEncoder
  te=TargetEncoder()
