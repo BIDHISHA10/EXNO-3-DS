@@ -117,7 +117,8 @@ from category_encoders import TargetEncoder
  CC
 ```
 <img width="700" height="455" alt="image" src="https://github.com/user-attachments/assets/7c1ceb18-30ab-4c27-86cd-bb31de86166f" />
-# RESULT:
-       # INCLUDE YOUR RESULT HERE
 
+# RESULT:
+
+Thus the given data, Feature Encoding, Transformation process and save the data to a file was performed successfully.
        
